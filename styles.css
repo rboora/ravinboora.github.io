@@ -1,0 +1,124 @@
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #222;
+  background-color: #f7f7f7;
+}
+
+header {
+  background-color: #0f5fc0;
+  color: #fff;
+  padding: 0.75rem 1rem 1.5rem 1rem;
+}
+
+.nav-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-weight: 600;
+}
+
+nav a {
+  color: #fff;
+  margin-left: 1rem;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+nav a.active {
+  text-decoration: underline;
+}
+
+.hero {
+  max-width: 1000px;
+  margin: 0.8rem auto 0 auto;
+  text-align: left;
+}
+
+.hero h1 {
+  margin: 0 0 0.4rem 0;
+  font-size: 1.8rem;
+}
+
+.hero p {
+  margin: 0.2rem 0;
+}
+
+.hero-buttons {
+  margin-top: 0.8rem;
+}
+
+.btn {
+  display: inline-block;
+  margin-right: 0.5rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: #0f5fc0;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.btn.secondary {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+
+.container {
+  max-width: 900px;
+  margin: 1.5rem auto 2.5rem auto;
+  padding: 0 1rem;
+}
+
+section {
+  background-color: #fff;
+  margin-bottom: 1rem;
+  padding: 1.25rem 1.5rem;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+section h1 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  color: #0f5fc0;
+}
+
+section h2 {
+  margin-top: 0;
+  font-size: 1.25rem;
+  color: #0f5fc0;
+}
+
+.project, .job {
+  margin-top: 1rem;
+}
+
+.project h2, .job h2 {
+  margin-bottom: 0.2rem;
+}
+
+.meta {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.4rem;
+}
+
+ul {
+  padding-left: 1.1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 0.8rem;
+  font-size: 0.85rem;
+  color: #555;
+}

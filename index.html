@@ -1,192 +1,52 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Ravin Boora | IT Graduate Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      color: #222;
-      background-color: #f7f7f7;
-    }
-    header {
-      background-color: #0f5fc0;
-      color: #fff;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0 0 0.5rem 0;
-      font-size: 2rem;
-    }
-    header p {
-      margin: 0.25rem 0;
-    }
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 1.5rem 1rem 3rem 1rem;
-    }
-    section {
-      background-color: #fff;
-      margin-bottom: 1rem;
-      padding: 1.25rem 1.5rem;
-      border-radius: 6px;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-    }
-    section h2 {
-      margin-top: 0;
-      margin-bottom: 0.75rem;
-      font-size: 1.3rem;
-      color: #0f5fc0;
-    }
-    .skills-list, .projects-list, .experience-list {
-      list-style: none;
-      padding-left: 0;
-      margin: 0;
-    }
-    .skills-list li {
-      margin-bottom: 0.35rem;
-    }
-    .project, .job {
-      margin-bottom: 1rem;
-    }
-    .project h3, .job h3 {
-      margin: 0 0 0.25rem 0;
-      font-size: 1.1rem;
-    }
-    .meta {
-      font-size: 0.9rem;
-      color: #555;
-      margin-bottom: 0.4rem;
-    }
-    a {
-      color: #0f5fc0;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 1.6rem;
-      }
-      section {
-        padding: 1rem 1.1rem;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
   <header>
-    <h1>Ravin Boora</h1>
-    <p>ICT (Cyber Security) Graduate · IT Support & Systems Administration</p>
-    <p>Hobart, TAS · <a href="mailto:ravinboora18710@gmail.com">ravinboora18710@gmail.com</a> · 0413 451 990</p>
+    <div class="nav-container">
+      <div class="logo">Ravin Boora</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="experience.html">Experience</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+
+    <div class="hero">
+      <h1>ICT (Cyber Security) Graduate</h1>
+      <p>IT support and systems administration focus, with industry project experience and leadership in fast-paced retail environments.</p>
+      <div class="hero-buttons">
+        <a class="btn" href="projects.html">View Projects</a>
+        <a class="btn secondary" href="Ravin_Resume.pdf" target="_blank">Download Resume</a>
+        <a class="btn secondary" href="contact.html">Contact Me</a>
+      </div>
+    </div>
   </header>
 
-  <div class="container">
+  <main class="container">
 
-    <section id="about">
-      <h2>About</h2>
+    <section>
+      <h2>Featured Project</h2>
+      <h3>Secure Photo Uploader for Healthcare Professionals</h3>
       <p>
-        I recently completed a Bachelor of Information and Communication Technology with a major in Cyber Security at the University of Tasmania. During my studies, I developed a strong interest in practical IT support, systems administration and how secure systems are designed and operated in the real world.
+        Industry client project for HealthCare Software, where I worked as Security &amp; Testing Lead on a React Native and .NET (C#) mobile app that lets clinicians securely capture and upload patient photos to Azure cloud storage.
       </p>
-      <p>
-        Alongside my degree, I worked in duty management and supervisory roles at Woolworths, Chemist Warehouse and Hill Street Grocer. These roles gave me experience leading teams, solving problems under pressure and working with in‑store systems and devices to keep operations running smoothly.
-      </p>
-      <p>
-        I’m now looking for an entry-level role in IT support, systems administration or a related IT position where I can apply my technical knowledge, keep learning and contribute to reliable, secure IT environments.
-      </p>
+      <p><a href="projects.html#secure-photo-uploader">See full case study →</a></p>
     </section>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul class="skills-list">
-        <li><strong>Operating systems:</strong> Windows 10/11, basic Windows Server exposure, Linux (Ubuntu, Kali).</li>
-        <li><strong>Networking &amp; security:</strong> Firewalls, VPN concepts, IP addressing, subnets, basic routing, access control; hands-on lab use of Wireshark, Nmap and Kali Linux.</li>
-        <li><strong>Tools &amp; platforms:</strong> Visual Studio Code, Git and GitHub, Splunk dashboards; basic cloud concepts in Azure/AWS.</li>
-        <li><strong>Programming &amp; databases:</strong> Python (basic scripting with loops, functions and file handling); HTML, CSS, JavaScript, PHP; SQL/SQLite/MySQL (basic SELECT/INSERT/UPDATE queries).</li>
-        <li><strong>Currently learning:</strong> Building a small home lab, practising Windows Server and Linux administration, exploring Azure fundamentals and entry-level security certifications.</li>
-      </ul>
-    </section>
+  </main>
 
-    <section id="projects">
-      <h2>Projects</h2>
-
-      <div class="project">
-        <h3>Secure Photo Uploader for Healthcare Professionals – Mobile &amp; Cloud Application</h3>
-        <div class="meta">
-          University of Tasmania · Group project for HealthCare Software (industry client)
-        </div>
-        <p>
-          Worked as Security &amp; Testing Lead on a React Native and .NET (C#) mobile application that enables clinicians to securely capture and upload patient photos from their devices to Azure cloud storage. I helped design and execute test plans for authentication, authorisation, upload workflows, metadata handling and audit trails, identifying and documenting defects and edge cases.
-        </p>
-        <p>
-          I contributed to validating the integration between the mobile app, Azure Blob Storage and Azure SQL to ensure data integrity and secure handling of sensitive healthcare information, and assisted with Agile cycle reports and user documentation for the client.
-        </p>
-        <!-- Later you can add links here, e.g.:
-        <p><a href="LINK_TO_PDF_OR_SUMMARY" target="_blank">View project summary</a></p>
-        -->
-      </div>
-
-      <div class="project">
-        <h3>Virtual Travel Journal – Full‑Stack Web Application</h3>
-        <div class="meta">
-          University of Tasmania
-        </div>
-        <p>
-          Built a full‑stack virtual travel journal web application with HTML, CSS and JavaScript on the frontend and PHP with MySQL (MariaDB) on the backend. The system supports user registration and login, creating and editing posts, and viewing an archive of previous entries.
-        </p>
-        <p>
-          I implemented user authentication, post handling and an archive view using a relational database, and applied basic security practices such as input validation, role‑based access control and protection against SQL injection, along with responsive design to support different devices.
-        </p>
-      </div>
-
-    </section>
-
-    <section id="experience">
-      <h2>Experience</h2>
-
-      <div class="job">
-        <h3>Duty Manager – Woolworths Supermarkets</h3>
-        <div class="meta">Hobart, TAS · March 2023 – Present</div>
-        <p>
-          Led store teams during shifts to maintain high standards of customer service, store presentation and daily operations in a fast‑paced environment. Frequently used in‑store systems and POS technology, strengthening my confidence with software, devices and basic troubleshooting in a live environment.
-        </p>
-      </div>
-
-      <div class="job">
-        <h3>Team Member – Chemist Warehouse</h3>
-        <div class="meta">Hobart, TAS · March 2024 – June 2025</div>
-        <p>
-          Provided customer service in a busy retail pharmacy, assisting customers with product enquiries and purchases, maintaining accurate stock levels and supporting compliance with health and safety standards.
-        </p>
-      </div>
-
-      <div class="job">
-        <h3>Supervisor – Hill Street Grocer</h3>
-        <div class="meta">Hobart, TAS · October 2023 – March 2024</div>
-        <p>
-          Coordinated staff to maintain productivity and customer satisfaction, assisted with training and supervising team members and supported cost control through effective stock and inventory management.
-        </p>
-      </div>
-
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:ravinboora18710@gmail.com">ravinboora18710@gmail.com</a></p>
-      <p>Location: Hobart, TAS, Australia</p>
-      <!-- Once you have LinkedIn, add it here -->
-      <!-- <p>LinkedIn: <a href="YOUR_LINKEDIN_URL" target="_blank">View my LinkedIn profile</a></p> -->
-    </section>
-
-  </div>
+  <footer>
+    <p>© 2026 Ravin Boora</p>
+  </footer>
 
 </body>
 </html>
