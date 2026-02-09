@@ -23,66 +23,81 @@
 
   <main class="container">
 
-    <section id="secure-photo-uploader">
+    <section>
       <h1>Projects</h1>
+      <p>
+        These projects come from my university studies and personal learning. They show how I work with real requirements, collaborate in a team and build practical solutions using web, mobile and cloud technologies.
+      </p>
+    </section>
 
-      <div class="project">
-        <h2>Secure Photo Uploader for Healthcare Professionals</h2>
-        <p class="meta">Mobile &amp; Cloud Application · University of Tasmania · Industry client: HealthCare Software</p>
+    <section class="project" id="secure-photo-uploader">
+      <h2>Secure Photo Uploader for Healthcare Professionals</h2>
+      <p class="meta">Industry Project · University of Tasmania · Client: HealthCare Software</p>
+      <p>
+        As part of my final-year industry project, I worked with a small team to design and build a secure photo uploader for healthcare professionals. The goal was to give clinicians a safer way to capture and upload patient images from their mobile devices into a controlled cloud environment, instead of keeping sensitive photos on personal phones.
+      </p>
+      <p>
+        The solution combined a mobile application with a cloud backend using Microsoft Azure services for storage, identity and data management. My focus in the team was on security and testing: understanding the key risks, planning how to verify that the system behaved correctly and helping the team check that new features did not introduce unexpected issues.
+      </p>
+      <h3>My Role</h3>
+      <ul>
+        <li>Worked with the team to understand the client’s requirements around privacy, consent and secure handling of patient images.</li>
+        <li>Designed and executed test cases for sign-in, authorisation, photo capture and upload flows, including edge cases and failure scenarios.</li>
+        <li>Helped validate that images and related data were correctly stored and retrieved in the Azure environment according to the intended design.</li>
+        <li>Documented defects, retested fixes and contributed to progress updates and demonstrations for the client and supervisors.</li>
+      </ul>
+      <h3>What I Learned</h3>
+      <ul>
+        <li>How to think about security, privacy and usability together when building systems for real users in a sensitive domain.</li>
+        <li>Working in an Agile-style project with an external client, where communication and clear documentation are as important as the code itself.</li>
+        <li>Practical experience collaborating with others on a shared codebase and test plan, and adapting as requirements evolved.</li>
+      </ul>
+      <p>
+        Due to confidentiality, I do not share screenshots or technical implementation details from this project in my portfolio, but I am happy to discuss my role and approach in more detail during an interview.
+      </p>
+    </section>
 
-        <h3>Overview</h3>
-        <p>
-          Mobile and cloud application for healthcare professionals to securely capture and upload patient photos from their devices into Azure cloud storage, reducing the risk of sensitive data remaining on personal phones. [file:32][file:33]
-        </p>
+    <section class="project" id="virtual-travel-journal">
+      <h2>Virtual Travel Journal</h2>
+      <p class="meta">Personal / Coursework Project · Full-Stack Web Application</p>
+      <p>
+        The Virtual Travel Journal is a web application that allows users to register, log in and record their travel experiences as journal entries, with an archive view for browsing previous trips. I originally built it as a small full-stack project using HTML, CSS, JavaScript, PHP and MySQL, handling both the front end and the server-side logic.
+      </p>
+      <p>
+        The current version of the site in my portfolio showcases the front-end implementation, including the layout, navigation and forms for creating and viewing entries. The original backend that handled authentication and data storage is no longer deployed, but the structure of the pages reflects how the system worked end-to-end.
+      </p>
 
-        <h3>Role</h3>
-        <p>Security &amp; Testing Lead in a six-person team. [file:33]</p>
+      <h3>Key Features</h3>
+      <ul>
+        <li>User registration and login forms designed to support account creation and authentication.</li>
+        <li>A create-entry page where users could add trip details, descriptions and images to their journal.</li>
+        <li>An archive page layout for browsing previous entries in a visually organised way.</li>
+        <li>Responsive styling to keep the site readable on different screen sizes.</li>
+      </ul>
 
-        <h3>Tech Stack</h3>
-        <p>React Native, .NET (C#), Azure Blob Storage, Azure SQL, Azure Active Directory, GitHub, Agile processes. [file:32][file:33]</p>
+      <h3>Example Screens</h3>
+      <p>Below are examples of how the Virtual Travel Journal looks.</p>
 
-        <h3>What I Did</h3>
-        <ul>
-          <li>Designed and executed test plans for authentication, authorisation, photo upload workflows, metadata handling and audit trails, identifying and documenting defects and edge cases. [file:32][file:33]</li>
-          <li>Worked with the team to validate integration between the mobile app, Azure Blob Storage and Azure SQL to ensure reliable uploads, data integrity and secure handling of sensitive healthcare information. [file:32][file:33]</li>
-          <li>Logged and tracked issues and retested fixes as features evolved through Agile cycles. [file:33]</li>
-          <li>Contributed to Agile reports and user documentation for the client, summarising test results and security considerations. [file:32][file:33]</li>
-        </ul>
+      <figure>
+        <img src="image1.jpg" alt="Virtual Travel Journal archive page layout" style="max-width:100%;border-radius:4px;">
+        <figcaption>Archive-style layout for browsing travel entries, showing how content and imagery are presented together.</figcaption>
+      </figure>
 
-        <h3>What I Learned</h3>
-        <ul>
-          <li>Working with cloud storage and authentication in a real healthcare context. [file:32][file:33]</li>
-          <li>Balancing privacy, security and usability requirements. [file:32][file:33]</li>
-          <li>Collaborating with a client and technical team in Agile iterations. [file:33]</li>
-        </ul>
-      </div>
+      <!-- Optional: add more screenshots here later -->
 
-      <div class="project">
-        <h2>Virtual Travel Journal</h2>
-        <p class="meta">Full‑Stack Web Application · University of Tasmania</p>
+      <h3>What I Learned</h3>
+      <ul>
+        <li>Designing and building a small web application from scratch, from page structure and styling through to form handling and (originally) database integration.</li>
+        <li>Using HTML, CSS and JavaScript together with PHP and SQL concepts to support user accounts and content storage.</li>
+        <li>Debugging layout and logic issues across multiple pages, and thinking about how users move through a site when completing tasks.</li>
+      </ul>
+    </section>
 
-        <h3>Overview</h3>
-        <p>
-          Full‑stack web application that allows users to register, log in and create travel journal posts, with an archive of previous entries. [file:73]
-        </p>
-
-        <h3>Tech Stack</h3>
-        <p>HTML, CSS, JavaScript, PHP, MySQL (MariaDB), VS Code, SSH. [file:22][file:73]</p>
-
-        <h3>What I Did</h3>
-        <ul>
-          <li>Implemented user registration and login using PHP sessions and a MySQL database. [file:22][file:73]</li>
-          <li>Built pages for creating and viewing posts, including an archive view of past entries. [file:22][file:73]</li>
-          <li>Applied input validation, basic role-based access control and SQL injection protection, and used responsive design to support different devices. [file:22][file:73]</li>
-        </ul>
-
-        <h3>What I Learned</h3>
-        <ul>
-          <li>Handling authentication and data storage end-to-end in a small web application. [file:22][file:73]</li>
-          <li>Debugging and deploying a PHP/MySQL application. [file:22]</li>
-        </ul>
-      </div>
-
+    <section>
+      <h2>Other Work</h2>
+      <p>
+        In addition to these projects, my degree included labs and assignments in areas such as networking, security, scripting and database design. These gave me experience configuring systems in controlled environments, writing small scripts to automate tasks and working with SQL to design and query relational data.
+      </p>
     </section>
 
   </main>
