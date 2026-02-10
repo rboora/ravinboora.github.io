@@ -12,7 +12,7 @@
     <div class="nav-container">
       <div class="logo">Ravin Boora</div>
       <nav>
-        <a href="index.html">Home</a>
+        <a href="index.html" class="active">Home</a>
         <a href="about.html">About</a>
         <a href="projects.html">Projects</a>
         <a href="experience.html">Experience</a>
@@ -20,14 +20,36 @@
       </nav>
     </div>
 
-    <div class="hero">
-      <h1>ICT (Cyber Security) Graduate</h1>
-      <p>IT support and systems administration focus, with industry project experience and leadership in fast-paced retail environments.</p>
-      <div class="hero-buttons">
-        <a class="btn" href="projects.html">View Projects</a>
-        <a class="btn secondary" href="Ravin_Resume.pdf" target="_blank">Download Resume</a>
-        <a class="btn secondary" href="contact.html">Contact Me</a>
+    <!-- Hero with intro + photo -->
+    <div class="hero hero-flex">
+      <div class="hero-text">
+        <h1>ICT Graduate focused on IT Support and Security</h1>
+        <p>
+          I am an early career IT professional based in Tasmania who enjoys helping people with technology,
+          learning how systems fit together and keeping things running smoothly.
+        </p>
+        <p>
+          I am comfortable with Windows and basic networking concepts, keen to grow in IT support and operations,
+          and interested in building a strong foundation in cyber security over time.
+        </p>
+        <div class="hero-buttons">
+          <a class="btn" href="projects.html">View projects</a>
+          <a class="btn secondary" href="experience.html">See experience</a>
+          <a class="btn secondary" href="Ravin_Resume.pdf" target="_blank">Download resume</a>
+        </div>
       </div>
+
+      <!-- OPTION A: circular photo (default – keep or comment out) -->
+       <!--<div class="hero-photo hero-photo-circle">
+        <img src="ravinphoto.png" alt="Ravin Boora at graduation">
+      </div>-->
+
+      <!-- OPTION B: tall rectangle photo (uncomment to try this style) -->
+     
+      <div class="hero-photo hero-photo-rect">
+        <img src="ravinphoto.png" alt="Ravin Boora at graduation">
+      </div>
+      
     </div>
   </header>
 
@@ -37,9 +59,24 @@
       <h2>Featured Project</h2>
       <h3>Secure Photo Uploader for Healthcare Professionals</h3>
       <p>
-        Industry client project for HealthCare Software, where I worked as Security &amp; Testing Lead on a React Native and .NET (C#) mobile app that lets clinicians securely capture and upload patient photos to Azure cloud storage.
+        Industry project with HealthCare Software where our team built a secure photo uploader for clinicians to
+        capture and upload patient images into a controlled cloud environment, reducing the risk of sensitive data
+        remaining on personal devices.
       </p>
-      <p><a href="projects.html#secure-photo-uploader">See full case study →</a></p>
+      <p>
+        I focused on security and testing, helping to design test cases, validate authentication and upload flows
+        and document issues for the client.
+      </p>
+      <p><a href="projects.html#secure-photo-uploader">Read more about this project →</a></p>
+    </section>
+
+    <section>
+      <h2>What I Bring</h2>
+      <ul>
+        <li>ICT graduate with a Cyber Security major and practical experience from an industry client project.</li>
+        <li>Hands-on experience in retail leadership roles, staying calm under pressure and supporting customers and teams.</li>
+        <li>Comfortable with Windows environments, basic networking concepts and learning new tools and processes quickly.</li>
+      </ul>
     </section>
 
   </main>
