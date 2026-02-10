@@ -122,3 +122,54 @@ footer {
   font-size: 0.85rem;
   color: #555;
 }
+
+.hero-flex {
+  max-width: 1000px;
+  margin: 1rem auto 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.hero-text {
+  flex: 1 1 260px;
+}
+
+.hero-photo {
+  flex: 0 0 auto;
+}
+
+/* Option A: circular photo */
+.hero-photo-circle img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* Option B: rectangular photo */
+.hero-photo-rect img {
+  width: 220px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 3px solid #ffffff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* Stack on small screens */
+@media (max-width: 700px) {
+  .hero-flex {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-photo-circle img,
+  .hero-photo-rect img {
+    width: 160px;
+    height: 160px;
+  }
+}
